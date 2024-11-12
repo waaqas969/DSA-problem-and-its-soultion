@@ -1,0 +1,12 @@
+# Taking input and mapping them to integers
+A11, A12, A21, A22 = map(int, input("Enter all numbers of first array (A11, A12, A21, A22): ").split())
+B11, B12, B21, B22 = map(int, input("Enter all numbers of second array (B11, B12, B21, B22): ").split())
+first_array = [A11, A12, A21, A22]
+second_array = [B11, B12, B21, B22]
+# matrix addition 2X2
+v1 = first_array[0] + second_array[0]
+v2 = first_array[1] + second_array[1]
+v3 = first_array[2] + second_array[2]
+v4 = first_array[3] + second_array[3]
+final_array = [[v1,v2],[v3,v4]]
+print(f"{final_array}")
