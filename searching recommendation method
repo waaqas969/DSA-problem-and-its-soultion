@@ -1,0 +1,18 @@
+# this problem is solved by waqas ahmed and rizwan ali
+array = [
+    {"Name": "Dr.Waqas", "Status": "Online", "Order": "Active"},
+    {"Name": "Dr.Rizwan", "Status": "Offline", "Order": "Non available"}
+]
+
+name = input("Enter Doctor name = ").strip().lower()  # Normalize input by stripping extra spaces and converting to 
+# Iterate over the list to find a match
+for doctor in array:
+    if name == "dr.":
+        for i in range(len(array)):
+            print(f"{doctor['Name']}")
+            break
+    elif name in doctor["Name"].lower() or name in doctor["Name"].upper(): 
+        print(f"{doctor['Name']} is available")     
+        break 
+    else:
+        print("Invalid result")
