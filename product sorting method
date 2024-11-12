@@ -1,0 +1,18 @@
+# List of dictionaries containing product information
+array = [
+    {"s.no": "01", "brand": "apple", "name": "apple12", "price": "120$", "expiry": 2016},
+    {"s.no": "02", "brand": "samsung", "name": "S+24", "price": "200$", "expiry": 2028}
+]
+
+a = input("Enter serial number of product = ")
+for product in array:
+    if product["s.no"] == a:  
+        print(f"Product found:")
+        print(f"Serial Number: {product['s.no']}")
+        print(f"Brand: {product['brand']}")
+        print(f"Name: {product['name']}")
+        print(f"Price: {product['price']}")
+        print(f"Expiry Year: {product['expiry']}")
+        break  
+    else:
+        print("Not found")
